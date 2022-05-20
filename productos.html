@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/leon-tribal_2.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Arhivos Javascript -->
+    <script async type="text/javascript" src="js/mainStart.js"></script>
+    <title>Cervecería León</title>
+</head>
+<body >
+    <div class="contenedor active" id="contenedor">
+        <nav class="menu-lateral">
+            <header class="header">
+                <div class="cajaBoton">
+                    <button id="boton-menu" class="boton-menu"><i class="fas fa-bars"></i></button>
+                </div>
+                <img id="logo" class="active" title="Cervecería Leon" src="images/leon-tribal-fondo-cieloNaranja_editado_1.png" alt="Cervezas Leon">
+            </header>  
+            <ul class="navContenedor" >
+                <li class="navItem"  style="--clr:#00dc82">
+                    <a href="index.html"><i class="fa-solid fa-house" id="linkIcono" onmouseover="hoverIcono(`linkIcono`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono`)"></i>
+                        <a href="index.html" class="palabras linkPalabras active" id="linkPalabras" onmouseover="hoverIcono(`linkIcono`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono`)" data-text="&nbsp;Inicio&nbsp;">&nbsp;Inicio&nbsp;</a>
+                    </a>
+                </li>
+                <li class="navItem" style="--clr:#ffdd1c">
+                    <a href="quienessomos.html"><i class="fa-solid fa-address-card" id="linkIcono2" onmouseover="hoverIcono(`linkIcono2`,`#ffdd1c`)" onmouseout="deleteHoverIcono(`linkIcono2`)"></i>
+                        <a href="quienessomos.html" class="palabras linkPalabras2 active" id="linkPalabras2" onmouseover="hoverIcono(`linkIcono2`,`#ffdd1c`)" onmouseout="deleteHoverIcono(`linkIcono2`)" data-text="&nbsp;Nosotros&nbsp;">&nbsp;Nosotros&nbsp;</a>
+                    </a>
+                </li>
+                <div class="itemActivo">
+                    <li class="navItem" style="--clr:#00dc82">
+                        <a href="productos.html"><i class="fa-solid fa-beer-mug-empty" id="linkIcono3" onmouseover="hoverIcono(`linkIcono3`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono3`)"></i>
+                            <a href="productos.html" class="palabras linkPalabras3 active" id="linkPalabras3" onmouseover="hoverIcono(`linkIcono3`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono3`)" data-text="&nbsp;Productos&nbsp;"></i>&nbsp;Productos&nbsp;</a>
+                        </a>
+                    </li>
+                </div>
+                <li class="navItem" style="--clr:#ffdd1c">
+                    <a href="contacto.html"><i class="fa-solid fa-address-book" id="linkIcono4" onmouseover="hoverIcono(`linkIcono4`,`#ffdd1c`)" onmouseout="deleteHoverIcono(`linkIcono4`)"></i>
+                        <a href="contacto.html" class="palabras linkPalabras4 active" id="linkPalabras4" onmouseover="hoverIcono(`linkIcono4`,`#ffdd1c`)" onmouseout="deleteHoverIcono(`linkIcono4`)" data-text="&nbsp;Contacto&nbsp;"></i>&nbsp;Contacto&nbsp;</a>
+                    </a>
+                </li>
+                <li class="navItem" style="--clr:#00dc82">
+                    <a href="comollegar.html"><i class="fa-solid fa-car" id="linkIcono5" onmouseover="hoverIcono(`linkIcono5`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono5`)"></i>
+                        <a href="comollegar.html" class="palabras linkPalabras5 active" id="linkPalabras5" onmouseover="hoverIcono(`linkIcono5`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono5`)"data-text="&nbsp;Ubicacion&nbsp;"></i>&nbsp;Ubicacion&nbsp;</a>
+                    </a>
+                </li>
+            </ul>
+            <footer class="active" id="footer"> 
+                <div class="centrado">
+                    <a class="a" href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;</a>
+                    <a class="a" href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square" aria-hidden="true"></i>&nbsp;&nbsp;</a>
+                    <a class="a" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a> 
+                </div> 
+                <p class="centrado pie">© <script>document.write(y = new Date().getFullYear())</script> Cervecería Leon</p>  
+            </footer>
+        </nav>
+        
+         <section class="contenidoPrincipalProducto">  <!--animate__animated animate__fadeIn -->
+            <h1 id="titulo" hidden>Productos</h1>
+            <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+            <div class="product-container" >
+                <div class="product-card"> 
+                    <img src="images/Productos/LeonDorada.jpg" class="product-image animate__animated animate__fadeIn" alt="León Dorada">
+                    <h2 class="product-brand animate__animated animate__fadeIn" style="--col:#00dc82">León Dorada</h2>
+                    <p class="product-short-description animate__animated animate__fadeIn"><strong>5% </strong>Alcohol - <strong>22</strong> IBU - Amargor Bajo</p><br>
+                    <p class="product-short-description animate__animated animate__fadeIn">Cerveza dorada y refrescante, con espuma densa. Cerveza frutada con suave sabor a caramelo, maltosa con buen cuerpo y un final amargo sutil.</p>
+                </div>   
+                <div class="product-card"> 
+                    <img src="images/Productos/LeonMielosa.jpg" class="product-image animate__animated animate__fadeIn" alt="León Mielosa">
+                    <h2 class="product-brand animate__animated animate__fadeIn" style="--col:#ffdd1c">León Mielosa</h2>
+                    <p class="product-short-description animate__animated animate__fadeIn"><strong>7,5%</strong> Alcohol - <strong>22</strong> IBU - Amargor Bajo</p><br>
+                    <p class="product-short-description animate__animated animate__fadeIn">Cerveza con notas mentoladas y frutales. Y, por supuesto, una inmersión de miel pura para abrir los corazones. Suave y aromática con el dulzor justo.</p>
+                </div>   
+                <div class="product-card">
+                    <img src="images/Productos/LeonSilvestre.jpg" class="product-image animate__animated animate__fadeIn" alt="León Silvestre">
+                    <h2 class="product-brand animate__animated animate__fadeIn" style="--col:#00dc82">León Silvestre</h2>
+                    <p class="product-short-description animate__animated animate__fadeIn"><strong>5%</strong> - <strong>15</strong> IBU - Amargor Bajo</p><br>
+                    <p class="product-short-description animate__animated animate__fadeIn">Un estilo propio a base de trigo con un poco de avena, cáscara de naranja, coriandro y jengibre que la hacen más cítrica, compleja y refrescante.</p>
+                </div>  
+                <div class="product-card">
+                    <img src="images/Productos/LeonIndia.jpg" class="product-image animate__animated animate__fadeIn"  alt="León India">
+                    <h2 class="product-brand animate__animated animate__fadeIn" style="--col:#ffdd1c">León India</h2>
+                    <p class="product-short-description animate__animated animate__fadeIn"><strong>7,5%</strong> Alcohol - Amargor Medio</p><br>
+                    <p class="product-short-description animate__animated animate__fadeIn">IPA con sabores y aromas frutales intensos, cuerpo suave y sensación en boca con textura delicada. Menos amarga que las IPA tradicionales.</p>
+                </div>   
+                <div class="product-card">
+                    <img src="images/Productos/LeonMorada.jpg" class="product-image animate__animated animate__fadeIn" alt="León Morada">
+                    <h2 class="product-brand animate__animated animate__fadeIn" style="--col:#00dc82">León Morada</h2>
+                    <p class="product-short-description animate__animated animate__fadeIn"><strong>7,7%</strong> Alcohol - <strong>24</strong> IBU - Amargor Bajo</p><br>
+                    <p class="product-short-description animate__animated animate__fadeIn">Cobriza intensa en maltas, con carácter sedoso y la dosis de lúpulo justa. Sabor maltoso y sutil gusto a caramelo tostado que deja leve dulzor en boca.</p>
+                </div>   
+                <div class="product-card">
+                    <img src="images/Productos/LeonAfricana.jpg" class="product-image animate__animated animate__fadeIn" alt="León Africana">
+                    <h2 class="product-brand animate__animated animate__fadeIn" style="--col:#ffdd1c">León Africana</h2>
+                    <p class="product-short-description animate__animated animate__fadeIn"><strong>7,5%</strong> Alcohol - <strong>35</strong> IBU - Amargor Medio</p><br>
+                    <p class="product-short-description animate__animated animate__fadeIn">Cerveza de maltas oscuras. Sabor y aroma penetrante y nocturno. Negra y tostada, empapada de alcohol y pasas, sabor amarga y ahumada.</p>
+                </div>    
+            </div> 
+        </section> 
+    </div>
+     
+    <!--Animaciones /+/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Animaciones /-/-->
+
+    <script src="https://kit.fontawesome.com/45f945ceff.js" crossorigin="anonymous"></script>
+    <script async type="text/javascript" src="js/main.js"></script>
+    <script async type="text/javascript" src="js/scriptProd.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">  
+        VanillaTilt.init(document.querySelectorAll(".product-card"), { 
+            max: 25,
+            speed: 1000,
+            glare: true,
+            "max-glare":0.5
+        });
+    </script>
+</body>
+</html>

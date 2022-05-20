@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/leon-tribal_2.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Arhivos Javascript -->
+    <script async type="text/javascript" src="js/mainStart.js"></script>
+    <title>Cervecería León</title>
+</head>
+<body>
+    <div class="contenedor active" id="contenedor">
+                    
+        <nav class="menu-lateral">
+            <header class="header">
+                <div class="cajaBoton">
+                    <button id="boton-menu" class="boton-menu"><i class="fas fa-bars"></i></button>
+                </div>
+                <img id="logo" class="active" title="Cervecería Leon" src="images/leon-tribal-fondo-cieloNaranja_editado_1.png" alt="Cervezas Leon">        
+            </header> 
+            <ul class="navContenedor" >
+                <div class="itemActivo">
+                    <li class="navItem"  style="--clr:#00dc82">
+                        <a href="index.html"><i class="fa-solid fa-house" id="linkIcono" onmouseover="hoverIcono(`linkIcono`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono`)"></i>
+                            <a href="index.html" class="palabras linkPalabras active" id="linkPalabras" onmouseover="hoverIcono(`linkIcono`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono`)" data-text="&nbsp;Inicio&nbsp;">&nbsp;Inicio&nbsp;</a>
+                        </a> 
+                    </li>
+                </div>
+                <li class="navItem" style="--clr:#ffdd1c">
+                    <a href="quienessomos.html"><i class="fa-solid fa-address-card" id="linkIcono2" onmouseover="hoverIcono(`linkIcono2`,`#ffdd1c`)" onmouseout="deleteHoverIcono(`linkIcono2`)"></i>
+                        <a href="quienessomos.html" class="palabras linkPalabras2 active" id="linkPalabras2" onmouseover="hoverIcono(`linkIcono2`,`#ffdd1c`)" onmouseout="deleteHoverIcono(`linkIcono2`)" data-text="&nbsp;Nosotros&nbsp;">&nbsp;Nosotros&nbsp;</a>
+                    </a>
+                </li>
+                <li class="navItem" style="--clr:#00dc82">
+                    <a class="iconoBarra" href="productos.html"><i class="fa-solid fa-beer-mug-empty" id="linkIcono3" onmouseover="hoverIcono(`linkIcono3`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono3`)"></i>
+                        <a href="productos.html" class="palabras linkPalabras3 active" id="linkPalabras3" onmouseover="hoverIcono(`linkIcono3`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono3`)" data-text="&nbsp;Productos&nbsp;">&nbsp;Productos&nbsp;</a>
+                    </a>
+                </li>
+                <li class="navItem" style="--clr:#ffdd1c">
+                    <a href="contacto.html"><i class="fa-solid fa-address-book" id="linkIcono4" onmouseover="hoverIcono(`linkIcono4`,`#ffdd1c`)" onmouseout="deleteHoverIcono(`linkIcono4`)"></i>
+                        <a href="contacto.html" class="palabras linkPalabras4 active" id="linkPalabras4" onmouseover="hoverIcono(`linkIcono4`,`#ffdd1c`)" onmouseout="deleteHoverIcono(`linkIcono4`)" data-text="&nbsp;Contacto&nbsp;">&nbsp;Contacto&nbsp;</a>
+                    </a>
+                </li>
+                <li class="navItem" style="--clr:#00dc82">
+                    <a href="comollegar.html"><i class="fa-solid fa-car" id="linkIcono5" onmouseover="hoverIcono(`linkIcono5`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono5`)"></i>
+                        <a href="comollegar.html" class="palabras linkPalabras5 active" id="linkPalabras5" onmouseover="hoverIcono(`linkIcono5`,`#00dc82`)" onmouseout="deleteHoverIcono(`linkIcono5`)"data-text="&nbsp;Ubicacion&nbsp;">&nbsp;Ubicacion&nbsp;</a>
+                    </a>
+                </li>
+            </ul>
+            <footer class="active" id="footer"> 
+                <div class="centrado">
+                    <a class="a" href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;</a>
+                    <a class="a" href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square" aria-hidden="true"></i>&nbsp;&nbsp;</a>
+                    <a class="a" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a> 
+                </div> 
+                <p class="centrado pie">© <script>document.write(y = new Date().getFullYear())</script> Cervecería Leon</p>  
+            </footer>
+        </nav>
+        <div class="contenedorPrincipal">
+            <div class="contenedorInicio">
+                <div class="IniItem1 animate__animated animate__fadeInDown">
+                    <a class="a" href="productos.html">
+                        <div class="img1">
+                            <div class="contenedorImg1">
+                                <div class="itemImg1 itImg1-1"></div>
+                                <div class="itemImg1 itImg1-2">
+                                    <p class="Text1Img1">Nuestras Cervezas</p>
+                                    <p class="Text1Img1">Artesanales</p>
+                                    <p class="Text2Img1">...La mejor variedad y sabores te están esperando...</p>
+                                </div>
+                                <!-- <div class="itemImg1 itImg1-3"></div> -->
+                            </div>                   
+                        </div>
+                    </a>
+                </div>
+                <div class="IniItem2 animate__animated animate__fadeInRight">
+                    <a class="a" href="quienessomos.html">
+                        <div class="img2">
+                            <div class="contenedorImg2">
+                                <div class="itemImg2 itImg2-1"></div>
+                                <div class="itemImg2 itImg2-2">
+                                    <p class="Text1Img2">Quienes Somos</p>
+                                    <p class="Text2Img2">...Conocé la familia que somos en la empresa...</p>
+                                </div>
+                                <!-- <div class="itemImg2 itImg2-3"></div> -->
+                            </div>
+                        </div>
+                    </a>    
+                </div>
+                <div class="IniItem3 animate__animated animate__fadeInUp">
+                    <a class="a" href="contacto.html">
+                        <div class="img3">
+                            <div class="contenedorImg3">
+                                <div class="itemImg3 itImg3-1"></div>
+                                <div class="itemImg3 itImg3-2">
+                                    <p id="Text1Img3" class="Text1Img3">Contactanos</p>
+                                </div>
+                                <!-- <div class="itemImg3 itImg3-3"></div> -->
+                            </div>
+                        </div>
+                    </a>    
+                </div>
+                <div class="IniItem4 animate__animated animate__fadeInRight">
+                    <a class="a" href="comollegar.html">
+                        <div class="img4">
+                            <div class="contenedorImg4">
+                                <div class="itemImg4 itImg4-1"></div>
+                                <div class="itemImg4 itImg4-2">
+                                    <p id="Text1Img4" class="Text1Img4">Vení a disfrutar</p>
+                                </div>
+                                <!-- <div class="itemImg4 itImg4-3"></div> -->
+                            </div>
+                        </div>
+                    </a>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Animaciones /+/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Animaciones /-/-->
+
+    <script src="https://kit.fontawesome.com/45f945ceff.js" crossorigin="anonymous"></script>
+	<script async type="text/javascript" src="js/main.js"></script>
+    <script async type="text/javascript" src="js/scriptInicio.js"></script>
+</body>
+</html>
